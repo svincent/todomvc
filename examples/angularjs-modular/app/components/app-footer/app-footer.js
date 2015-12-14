@@ -3,7 +3,7 @@
 
 todomvc.directive('todoFooter', function() {
   return {
-    templateUrl: '/app/parts/footer.html',
+    templateUrl: '/app/components/app-footer/app-footer.html',
     scope: {},
     bindToController: {},
     controllerAs: 'vm',

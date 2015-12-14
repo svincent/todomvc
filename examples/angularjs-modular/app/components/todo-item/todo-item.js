@@ -3,7 +3,7 @@
 
 todomvc.directive('todoItem', function() {
   return {
-    templateUrl: '/app/parts/todo-item.html',
+    templateUrl: '/app/components/todo-item/todo-item.html',
     scope: {},
     bindToController: {
       todo: "=item"

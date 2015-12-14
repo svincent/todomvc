@@ -3,7 +3,7 @@
 
 todomvc.directive('todoList', function(TodoRegistry) {
   return {
-    templateUrl: '/app/parts/todo-list.html',
+    templateUrl: '/app/components/todo-list/todo-list.html',
     scope: {},
     bindToController: {},
     controllerAs: 'vm',

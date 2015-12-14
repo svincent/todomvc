@@ -1,9 +1,9 @@
 /*global todomvc */
 'use strict';
 
-todomvc.directive('todoHeader', function() {
+todomvc.directive('todoMain', function() {
   return {
-    templateUrl: '/app/parts/header.html',
+    templateUrl: '/app/components/app-main/app-main.html',
     scope: {},
     bindToController: {},
     controllerAs: 'vm',
