@@ -1,14 +1,16 @@
-<div class="view">
-	<input class="toggle" type="checkbox" ng-model="vm.todo.done" ng-change="vm.toggle()">
-	<label class="ng-binding" ng-dblclick="vm.startEdit()">{{ vm.todo.value }}</label>
-	<button class="destroy" ng-click="vm.remove()"></button>
-</div>
-<form ng-submit="vm.finishEdit()">
-	<input
-		class="edit"
-		ng-trim="false"
-		ng-model="vm.todo.value"
-		ng-blur="vm.finishEdit()"
-		todo-escape="vm.abortEdit()"
-		todo-focus="vm.editing">
-</form>
+<li>
+	<div class="view">
+		<input class="toggle" type="checkbox" ng-model="vm.todo.done" ng-change="vm.toggle()">
+		<label class="ng-binding" ng-dblclick="vm.startEdit()">{{ vm.todo.value }}</label>
+		<button class="destroy" ng-click="vm.remove()"></button>
+	</div>
+	<form ng-submit="vm.finishEdit()">
+		<input
+			class="edit"
+			ng-trim="false"
+			ng-model="vm.todo.value"
+			ng-blur="vm.finishEdit()"
+			todo-escape="vm.abortEdit()"
+			todo-focus="vm.editing">
+	</form>
+</li>

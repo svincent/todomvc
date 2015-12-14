@@ -1,13 +1,3 @@
 <ul id="todo-list">
 	<li todo-item ng-repeat="todo in vm.todos" item="todo"></li>
-	<!--<li ng-repeat="todo in todos | filter:statusFilter track by $index" ng-class="{completed: todo.completed, editing: todo == editedTodo}" class="ng-scope">
-		<div class="view">
-			<input class="toggle ng-pristine ng-untouched ng-valid" type="checkbox" ng-model="todo.completed" ng-change="toggleCompleted(todo)">
-			<label ng-dblclick="editTodo(todo)" class="ng-binding">abca</label>
-			<button class="destroy" ng-click="removeTodo(todo)"></button>
-		</div>
-		<form ng-submit="saveEdits(todo, 'submit')" class="ng-pristine ng-valid">
-			<input class="edit ng-pristine ng-untouched ng-valid" ng-trim="false" ng-model="todo.title" todo-escape="revertEdits(todo)" ng-blur="saveEdits(todo, 'blur')" todo-focus="todo == editedTodo">
-		</form>
-	</li>-->
 </ul>
