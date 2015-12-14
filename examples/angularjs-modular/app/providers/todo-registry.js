@@ -16,6 +16,7 @@ todomvc.factory('TodoRegistry', function ($q, Storage) {
 		},
 		
 		add: function add(todo) {
+			todo.created = Date.now();
 			todos.push(todo);
 			registry.save();
 		},
