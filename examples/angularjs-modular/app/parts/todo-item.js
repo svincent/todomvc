@@ -3,9 +3,9 @@
 
 todomvc.directive('todoItem', function() {
   return {
-    bindToController: true,
     templateUrl: '/app/parts/todo-item.html',
-    scope: {
+    scope: {},
+    bindToController: {
       todo: "=item"
     },
     controllerAs: 'vm',

@@ -3,8 +3,10 @@
 
 todomvc.directive('todoMain', function() {
   return {
-    bindToController: true,
     templateUrl: '/app/parts/main.html',
     scope: {},
+    bindToController: {},
+    controllerAs: 'vm',
+    controller: function() {},
   };
 });

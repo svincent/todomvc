@@ -3,9 +3,9 @@
 
 todomvc.directive('todoInput', function(TodoRegistry) {
   return {
-    bindToController: true,
     templateUrl: '/app/parts/todo-input.html',
     scope: {},
+    bindToController: {},
     controllerAs: 'vm',
     controller: function(TodoRegistry) {
       var vm = this;
