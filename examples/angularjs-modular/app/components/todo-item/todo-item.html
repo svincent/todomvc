@@ -1,4 +1,4 @@
-<li>
+<li ng-class="{ editing: vm.editing, completed: vm.todo.done }">
 	<div class="view">
 		<input class="toggle" type="checkbox" ng-model="vm.todo.done" ng-change="vm.toggle()">
 		<label class="ng-binding" ng-dblclick="vm.startEdit()">{{ vm.todo.value }}</label>

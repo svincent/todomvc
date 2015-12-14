@@ -4,6 +4,7 @@
 todomvc.directive('todoItem', function() {
   return {
     templateUrl: '/app/components/todo-item/todo-item.html',
+    replace: true,
     scope: {},
     bindToController: {
       todo: "=item"
@@ -46,20 +47,6 @@ todomvc.directive('todoItem', function() {
       vm.remove = function remove() {
         TodoRegistry.remove(vm.todo);
       };
-    },
-    
-    link: function(scope, element, attributes) {
-      var completedWatch = scope.$watch('vm.todo.done', function(newValue) {
-        element.toggleClass('completed', newValue);
-      });
-      
-      var editWatch = scope.$watch('vm.editing', function(newValue) {
-        element.toggleClass('editing', !!newValue);
-      }); 
-      
-      scope.$on('$destroy', function cleanup() {
-        completedWatch();
-      })
     },
   };
 });
